@@ -1,0 +1,227 @@
+@import url("./fonts.css");
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "CeraPro", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #3D3D3D;
+  height: 100vh;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100%;
+}
+
+.frame{
+  padding: 32px 0;
+}
+
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  border-bottom: .3px solid rgba(70,163,88, .5);
+}
+
+.logo-link{
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.nav{
+  display: inline-block;
+  padding: 8px 20px 0 20px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.link{
+  margin: 0 25px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.11px;
+  color: #3D3D3D;
+  text-decoration: none;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+
+.link--active{
+  font-weight: 700;
+}
+
+.link--active:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: #46A358; 
+};
+
+.btm-logout{
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.btn{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.11px;
+  color: #FFFFFF;
+  background-color: #46A358;
+  padding: 8px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity .25s linear;
+}
+
+.btn:active, .btn:hover {
+  opacity: 0.5;
+}
+
+.main{
+  padding-top: 12px;
+}
+
+.layout{
+  background-color: rgba(245,245,245, .5);
+  display: flex;
+}
+
+.welcome{
+  padding: 43px 68px 85px 68px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle{
+  display: inline;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+
+.title{
+  display: inline;
+  width: 100%;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 70px;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+
+.title--green{
+  color: #46A358;
+}
+
+.desc{
+  display: inline;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color:#727272;
+  margin-bottom: 44px;
+}
+
+.shop-btn{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  padding: 10px 26px;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 6px;
+  background-color: #46A358;
+}
+
+.plant{
+  max-width: 507px;
+  width: 100%;
+  position: relative;
+}
+
+.plant-large{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.plant-small{
+  position: absolute;
+  left: 46px;
+  bottom: 68px;
+}
